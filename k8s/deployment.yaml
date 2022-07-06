@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ryans24web 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ryans24web
+  template:
+    metadata:
+      labels:
+        app: ryans24web 
+    spec:
+      containers:
+        - name: ryans24web 
+          image: ryans24.azurecr.io/ryans24web
+          ports:
+          - containerPort: 80
