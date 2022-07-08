@@ -1,3 +1,16 @@
+body {
+    background-color: black;
+}
+
 #mainHeading {
-    font-family: "Roboto"
+    font-family: "Roboto";
+    color: white;
+    text-align: center;
+}
+
+#welcomeImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
 }
